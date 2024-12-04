@@ -1,0 +1,25 @@
+.registration-input-field, .registration-select-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: aqua;
+  }
+  
+  .registration-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .registration-button:hover {
+    background-color: #218838;
+  }
+  

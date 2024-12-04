@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .form-container {
+    background-color: #f9c0c0; /* Cambia el color de fondo del formulario */
+    padding: 1.5rem; /* Ajusta el padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(12, 12, 12, 0.2);
+    width: 150%;
+    max-width: 400px; /* Ajusta el ancho máximo del formulario */
+    margin-right: 0px;
+    position: relative;
+    left: 150px;
+  }
+  
+  .header-with-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-icon {
+    width: 60%;
+    height: 70%;
+    margin-right: 8px;
+  }
+
+  .logo {
+    width: 550px;
+    margin-left: 540px;
+  }
+  

@@ -1,0 +1,184 @@
+/* Asegura que el fondo blanco cubra toda la página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.dashboard-container {
+    min-height: 100vh; /* Asegura que el contenedor principal ocupe al menos el 100% de la altura de la ventana */
+    padding: 0; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #c1bbbb, #f03737);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    width: 100%; /* Asegura que el header ocupe el ancho completo */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  
+
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 88.05px; /* Espacio entre el logo y los enlaces */
+  }
+  
+  .menu-item {
+    position: relative;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    color: #f03737;
+    background-color: #fcfcfc;
+  }
+  
+  .menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f03737;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  
+.main-content {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho del contenido */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    width: 100%; /* Asegura que el formulario ocupe el 100% del ancho permitido */
+    max-width: 600px; /* Limita el ancho del formulario */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.field-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    background-color: #f1f1f1; /* Color de fondo de los inputs */
+    color: #555555; /* Color del texto dentro de los inputs */
+    border: 1px solid #ccc; /* Color del borde */
+    border-radius: 4px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    width: 48%; /* Para que los inputs se alineen dos a dos */
+}
+
+.input-box:focus {
+    border-color: #f03737; /* Color del borde al enfocarse */
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #f03737;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilos para la tabla de alumnos */
+.student-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    overflow-x: auto;
+}
+
+.student-list-table th, .student-list-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.student-list-table th {
+    background-color: #f03737;
+    color: white;
+}
+
+.student-list-table .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.student-list-table button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.student-list-table button:hover {
+    background-color: #d32f2f;
+}

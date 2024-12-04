@@ -1,0 +1,55 @@
+ /* Estilos específicos para la página de login */
+ .login-page-body {
+    margin: 0;
+    background: linear-gradient(to bottom, #c1bbbb, #f03737), /* Degradado de gris arriba a rojo abajo */
+                #ffffff; /* Mitad derecha blanca */
+    background-size: 50% 100%; /* Ajusta el tamaño de cada fondo al 50% del ancho y 100% del alto */
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    background-position: left, right; /* Posiciona los fondos a la izquierda y derecha */
+    height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 59px; /* Añadir un padding para los bordes */
+
+}
+  .input-field {
+    width: calc(100% - 20px);
+    padding: 8px 10px; /* Reduce el padding para hacer los inputs más pequeños */
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid #c56a6a;
+    font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+    background-color: transparent;
+    outline: none;
+    color: #333;
+    transition: border-bottom-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-bottom-color: #0a0a0a;
+    box-shadow: 0 1px 0 0 #050505;
+  }
+  
+  .button {
+    width: 100%; /* Ajusta el ancho del botón al 100% del contenedor */
+    padding: 8px; /* Reduce el padding */
+    background-color: #f60707; /* Cambia el color de fondo del botón */
+    color: #ffffff; /* Cambia el color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #000000; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 1rem;
+    color: #000000;
+  }
+  

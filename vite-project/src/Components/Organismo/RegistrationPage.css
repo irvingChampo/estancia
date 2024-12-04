@@ -1,0 +1,54 @@
+.registration-container {
+  margin: 0;
+  background: linear-gradient(to bottom, #c1bbbb, #f03737), /* Degradado de gris arriba a rojo abajo */
+              #ffffff; /* Mitad derecha blanca */
+  background-size: 50% 100%; /* Ajusta el tamaño de cada fondo al 50% del ancho y 100% del alto */
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+  background-position: left, right; /* Posiciona los fondos a la izquierda y derecha */
+  height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 0 250px; /* Añadir un padding para los bordes */
+  }
+  
+  .registration-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .registration-logo {
+    width: 520px; /* Ajusta el tamaño del logo */
+    margin-left: 150px;
+    left: 150px;
+  }
+  
+  .registration-input-field, .registration-select-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: aqua;
+  }
+  
+  .registration-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .registration-button:hover {
+    background-color: #218838;
+  }
+  
